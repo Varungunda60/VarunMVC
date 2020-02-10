@@ -45,6 +45,9 @@ public class CalciUI extends Frame {
 	private void addListenerInterfaces() {
 		addWindowListener(new WindowClosingAdapter());
 		sum.addActionListener(new CalciActionListener());
+		diff.addActionListener(new CalciActionListener());
+		mul.addActionListener(new CalciActionListener());
+		div.addActionListener(new CalciActionListener());
 		
 	}
 	private class WindowClosingAdapter extends WindowAdapter
@@ -74,7 +77,7 @@ public class CalciUI extends Frame {
 					cCM.setRes(o1-o2);
 				}
 				if(e.getSource()==sum) {
-					cCM.setRes(o1+02);
+					cCM.setRes(o1+o2);
 				}
 			}
 			catch(Exception E) {
