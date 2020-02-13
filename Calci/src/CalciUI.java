@@ -68,16 +68,16 @@ public class CalciUI extends Frame {
 				cCM.setOper1(o1);
 				cCM.setOper2(o2);
 				if(e.getSource()==mul) {
-					cCM.setRes(o1*o2);
+					cCM.mul();
 				}
 				if(e.getSource()==div) {
-					cCM.setRes(o1/o2);
+					cCM.div();
 				}
 				if(e.getSource()==diff) {
-					cCM.setRes(o1-o2);
+					cCM.sub();
 				}
 				if(e.getSource()==sum) {
-					cCM.setRes(o1+o2);
+					cCM.add();
 				}
 			}
 			catch(Exception E) {
